@@ -1,3 +1,4 @@
+// Recipe.js
 const mongoose = require('mongoose');
 
 const RecipeSchema = new mongoose.Schema({
@@ -6,7 +7,7 @@ const RecipeSchema = new mongoose.Schema({
     required: true,
   },
   ingredients: {
-    type: [String], // Array of strings for ingredients
+    type: [String],
     required: true,
   },
   instructions: {
@@ -15,22 +16,22 @@ const RecipeSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    required: false, // Optional field, can add categories like 'dessert', 'main course', etc.
+    required: false,
   },
   preparationTime: {
-    type: Number, // Preparation time in minutes
+    type: Number,
     required: false,
   },
   cookingTime: {
-    type: Number, // Cooking time in minutes
+    type: Number,
     required: true,
   },
   servings: {
-    type: Number, // Number of servings
+    type: Number,
     required: false,
   },
   image: {
-    type: String, // URL or file path for the image
+    type: String,
     required: false,
   },
   difficulty: {
